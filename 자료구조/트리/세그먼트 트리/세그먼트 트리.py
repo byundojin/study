@@ -10,5 +10,3 @@ class SegTree:
         self.root:Node = None
         self.point:Node = None
 
-    def add_node(self, node:Node):
-        self.
