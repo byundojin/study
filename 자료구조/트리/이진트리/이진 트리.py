@@ -41,7 +41,7 @@ tree = Tree()
 for i in range(1, 8):
     tree.add_node(Node(i))
 
-print(tree.get_node(5))
+print(tree.nodes)
 
 
 
