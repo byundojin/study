@@ -15,7 +15,7 @@ arr[0] += N
 c = 0
 while arr[c]:
     c += 1
-    if c > 300_0000:
+    if c > 3000000:
         break
     arr[c] += arr[c - 1]
 
