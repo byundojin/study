@@ -5,11 +5,11 @@ class Studnet():
         self.major = major
 
     def self_introduce(self):
-        print("------------")
+        print("=============")
         print("이름 :", self.name)
         print("번호 :", self.number)
         print("전공 :", self.major)
-        print("------------")
+        print("=============")
 
 class StudnetBuilder():
     name:str
@@ -32,4 +32,8 @@ class StudnetBuilder():
             raise "major is invaild"
 
     def build(self) -> Studnet:
+        if not self.name:
+            raise "name is empty"
+        if not self.number:
+            raise "number is empty"
         return Studnet(self.name, self.number, self.major)

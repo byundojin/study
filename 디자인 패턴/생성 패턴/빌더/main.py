@@ -3,7 +3,6 @@ import student
 student1 = student.StudnetBuilder().set_name("도진").set_number(2105).set_major("back-end").build()
 student1.self_introduce()
 
-
 student2 = student.StudnetBuilder().set_name("승권").set_number(2109).set_major("game-dev").build()
 student2.self_introduce()
 
