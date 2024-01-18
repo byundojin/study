@@ -17,6 +17,25 @@ JWS를 서명하기 위한 정보를 담는다.
 #### payload
 실질적인 정보가 들어간다. JWE로 암호화하여 넣는다.
 
+claim
+- iss -> 발급자
+- aud -> 발급 대상자
+- sub -> 토큰 대상자
+- iat -> 토큰 발급 시간
+- exp -> 토큰 만료 시간
+
+ex)<br>
+```json
+{
+    "iss":"dojins_app",
+    "aud":["dojins_app_1","dojins_app_2","dojins_app_3"],
+    "sub":"chul@gmail.com",
+    "iat":"2024:01:18:06:53:17",
+    "exp":"2024:01:18:06:58:17"
+}
+```
+
+
 #### signature
 header의 표기된 알고리즘으로 private key를 사용하여 서명한 것이다.
 
