@@ -3,7 +3,7 @@ def a(func):
         print("a!!!")
     return _a
 
-def a1(func:function):
+def a1(func):
     def _a():
         print("a!!!")
         func()
